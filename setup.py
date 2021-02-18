@@ -15,4 +15,8 @@ setup(name='dinet',
       author_email='evrislav@gmail.com',
       license='MIT',
       packages=['dinet'],
+      entry_points={
+            'console_scripts': ['dinet=dinet.command_line:main'],
+      },
+      include_package_data=True,
       zip_safe=False)
